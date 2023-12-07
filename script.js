@@ -1,19 +1,18 @@
 const container = document.getElementById("container");
 document.querySelector("#request-btn").addEventListener("click", getData);
 
-// console.log("Hello World")
-
+const test = 5;
 async function getData() {
   try {
-    // conect
-    const url = "https://pokeapi.co/api/v2/pokemon";
+    const url =
+      "https://api.openweathermap.org/data/2.5/weather?q=Romanshorn&appid=f56f940d59573a50c91e8967c8559adf&lang=de&units=metric";
     const response = await fetch(url);
     const data = await response.json();
-    let p = document.createElement("p");
-    p.textContent = data.results[0].name;
-    container.inerHTML = "";
-    container.appendChild(p);
-    // error handling
+    console.log("my data:", data.name);
+    let newElement = document.createElement("p");
+    container.textContent = "";
+    newElement.textContent = data.name;
+    container.appendChild(newElement);
   } catch (err) {
     console.log(err);
   }
