@@ -1,0 +1,32 @@
+button {
+  width: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.monday {
+  background-color: aquamarine;
+}
+.tuesday {
+  background-color: aquamarine;
+}
+.wednesday {
+  background-color: aquamarine;
+}
+.thursday {
+  background-color: aquamarine;
+}
+.friday {
+  background-color: aquamarine;
+}
+.saturday {
+  background-color: aquamarine;
+}
+.sunday {
+  background-color: aquamarine;
+}
